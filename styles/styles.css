@@ -44,8 +44,41 @@ h2 {
   margin-bottom: 40px;
 }
 
-p {
+.offers-description {
   font-size: 24px;
   font-weight: 400;
   color: #383838;
+}
+footer {
+  background-color: #10367c;
+  padding-top: 110px;
+}
+.links {
+  color: #ffffff;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 2.35;
+  display: flex;
+  /*justify-content: space-around;*/
+}
+.links-about{
+  padding-left: 105px;
+  padding-right: 225px;
+}
+.links-property{
+  padding-right: 285px;
+}
+.links-title {
+  font-weight: 500;
+}
+.links-list {
+  font-weight: 400;
+}
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 105px;
+  padding-top: 45px;
+  padding-bottom: 120px;
+  justify-content: start;
 }
