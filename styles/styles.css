@@ -1,13 +1,16 @@
 @import url("./fonts.css");
+
 * {
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .text-center {
   text-align: center;
 }
@@ -34,14 +37,13 @@ h2 {
   margin-bottom: 120px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 
 .image {
   width: 90px;
   height: 90px;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 }
 
 .offers-description {
@@ -49,36 +51,48 @@ h2 {
   font-weight: 400;
   color: #383838;
 }
+
 footer {
   background-color: #10367c;
-  padding-top: 110px;
+  padding-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .links {
   color: #ffffff;
-  margin: 0 auto;
+  padding: 0 105px;
   font-size: 20px;
-  line-height: 2.35;
+  line-height: 2.5;
   display: flex;
-  /*justify-content: space-around;*/
+  flex-basis: 1440px;
 }
-.links-about{
-  padding-left: 105px;
-  padding-right: 225px;
+
+.links-about {
+  flex-basis: 33.3%;
 }
-.links-property{
-  padding-right: 285px;
+
+.links-property {
+  flex-basis: 33.3%;
 }
+
+.links-support {
+  flex-basis: 33.3%;
+}
+
 .links-title {
   font-weight: 500;
 }
+
 .links-list {
   font-weight: 400;
 }
+
 .copyright {
   font-size: 14px;
   font-weight: 400;
-  margin-left: 105px;
-  padding-top: 45px;
+  padding-top: 65px;
   padding-bottom: 120px;
+  display: flex;
   justify-content: start;
 }
