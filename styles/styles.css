@@ -1,6 +1,14 @@
+@import url("./fonts.css");
+
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .text-center {
@@ -10,6 +18,7 @@
 h2 {
   color: #383838;
   font-size: 40px;
+  font-weight: 500;
   margin-top: 120px;
   margin-bottom: 20px;
 }
@@ -24,19 +33,66 @@ h2 {
 }
 
 .offers {
-  display: inline-block;
-  width: 25%;
   height: 180px;
-  float: left;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .image {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 58px;
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+  margin-bottom: 55px;
 }
 
-p {
+.offers-description {
   font-size: 24px;
+  font-weight: 400;
   color: #383838;
+}
+
+footer {
+  background-color: #10367c;
+  padding-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.links {
+  color: #ffffff;
+  padding: 0 105px;
+  font-size: 20px;
+  line-height: 2.5;
+  display: flex;
+  flex-basis: 1440px;
+}
+
+.links-about {
+  flex-basis: 33.3%;
+}
+
+.links-property {
+  flex-basis: 33.3%;
+}
+
+.links-support {
+  flex-basis: 33.3%;
+}
+
+.links-title {
+  font-weight: 500;
+}
+
+.links-list {
+  font-weight: 400;
+}
+
+.copyright {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 65px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: start;
 }
