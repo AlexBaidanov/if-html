@@ -11,6 +11,87 @@
   margin: 0 auto;
 }
 
+.header {
+  height: 100vh;
+  padding: 50px 105px 0;
+  background-image: url("../img/top-section/top-section-background.png");
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+  width: 205px;
+  height: 40px;
+  background-image: url("../img/logos/logos-sprite.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.links-header {
+  margin-bottom: 200px;
+  display: flex;
+}
+.stays.offers-description {
+  color: #ffffff;
+  padding-left: 24px;
+}
+.line.line-header {
+  width: 50px;
+  margin: 12px auto 0;
+}
+.dark-theme.header-logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 48px;
+  background-position: -150px 5px;
+}
+.account.header-logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 24px;
+  background-position: -235px 0;
+}
+.header-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page {
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.page-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+form {
+  width: 100%;
+}
+
+.apps {
+  width: 100%;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.android {
+  width: 135px;
+  height: 40px;
+  background-position: -275px 0;
+}
+.ios {
+  width: 135px;
+  height: 40px;
+  background-position: -410px 0;
+}
+
+
+
 .text-center {
   text-align: center;
 }
@@ -59,7 +140,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.links {
+.links-footer {
   color: #ffffff;
   padding: 0 105px;
   font-size: 20px;
