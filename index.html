@@ -4,62 +4,112 @@
     <meta charset="UTF-8" />
     <title>TripHouse</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="icon" href="./img/Vector/Logo.svg" />
+    <link rel="icon" href="img/logos/icon-logo.svg" />
   </head>
   <body>
+    <div class="container header">
+      <header>
+        <div class="header-logo"></div>
+        <div class="links-header">
+          <div class="stays offers-description">
+            Stays
+            <div class="line line-header"></div>
+          </div>
+          <div class="stays offers-description">Attractions</div>
+          <div class="dark-theme header-logo"></div>
+          <div class="account header-logo"></div>
+        </div>
+      </header>
+      <div class="header-page">
+        <div class="page">
+          Discover stays <br />
+          to live, work or just relax
+        </div>
+        <div class="page-description">
+          <div>Your destination or hotel name</div>
+          <div>Check-in — Check-out</div>
+        </div>
+        <form>
+          <input
+            class="destination form-text"
+            type="text"
+            name="hotel"
+            id="destination"
+            value="New York"
+          />
+          <input
+            class="date form-text text-center"
+            type="text"
+            name="calendar"
+            id="date"
+            value="Tue 15 Sept — Sat 19 Sept"
+          />
+          <input
+            class="booking form-text text-center"
+            type="text"
+            value="2 Adults — 0 Children — 1 Room"
+          />
+          <button class="button">Search</button>
+        </form>
+        <div class="apps">
+          <div class="android header-logo"></div>
+          <div class="ios header-logo"></div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <h2 class="text-center">What do we offer</h2>
       <div class="line"></div>
       <div class="offers">
         <div class="text-center">
-          <img src="./img/Vector/Support.svg" alt="Support" class="image" />
+          <img src="img/advantages/Support.svg" alt="Support" class="image" />
           <p class="offers-description">Support 24/7</p>
         </div>
         <div class="text-center">
           <img
-            src="./img/Vector/Communicate.svg"
+            src="img/advantages/Communicate.svg"
             alt="Communicate"
             class="image"
           />
           <p class="offers-description">Communicate directly</p>
         </div>
         <div class="text-center">
-          <img src="./img/Vector/Book.svg" alt="Book" class="image" />
+          <img src="img/advantages/Book.svg" alt="Book" class="image" />
           <p class="offers-description">Book online</p>
         </div>
         <div class="text-center">
-          <img src="./img/Vector/Reviews.svg" alt="Reviews" class="image" />
+          <img src="img/advantages/Reviews.svg" alt="Reviews" class="image" />
           <p class="offers-description">Real guest reviews</p>
         </div>
       </div>
-      <footer>
-        <div class="links">
-          <div class="links-about">
-            <p class="links-title">About</p>
-            <p class="links-list">How Triphouse works</p>
-            <p class="links-list">Careers</p>
-            <p class="links-list">Privacy</p>
-            <p class="links-list">Terms</p>
-          </div>
-          <div class="links-property">
-            <p class="links-title">Property types</p>
-            <p class="links-list">Guest houses</p>
-            <p class="links-list">Hotels</p>
-            <p class="links-list">Apartments</p>
-            <p class="links-list">Villas</p>
-            <p class="links-list">Holiday homes</p>
-            <p class="links-list">Hostels</p>
-          </div>
-          <div class="links-support">
-            <p class="links-title">Support</p>
-            <p class="links-list">Contact Customer Service</p>
-            <p class="links-list">FAQ</p>
-          </div>
-        </div>
-        <div class="copyright links">
-          &copy; 2022Triphouse, Inc. All rights reserved
-        </div>
-      </footer>
     </div>
+    <footer class="container">
+      <div class="links-footer">
+        <div class="links-about">
+          <p class="links-title">About</p>
+          <p class="links-list">How Triphouse works</p>
+          <p class="links-list">Careers</p>
+          <p class="links-list">Privacy</p>
+          <p class="links-list">Terms</p>
+        </div>
+        <div class="links-property">
+          <p class="links-title">Property types</p>
+          <p class="links-list">Guest houses</p>
+          <p class="links-list">Hotels</p>
+          <p class="links-list">Apartments</p>
+          <p class="links-list">Villas</p>
+          <p class="links-list">Holiday homes</p>
+          <p class="links-list">Hostels</p>
+        </div>
+        <div class="links-support">
+          <p class="links-title">Support</p>
+          <p class="links-list">Contact Customer Service</p>
+          <p class="links-list">FAQ</p>
+        </div>
+      </div>
+      <div class="copyright links-footer">
+        &copy; 2022Triphouse, Inc. All rights reserved
+      </div>
+    </footer>
   </body>
 </html>
