@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.header-logo {
+.header__logo {
   width: 205px;
   height: 40px;
   /*margin-top: 5px;*/
@@ -29,20 +29,20 @@ header {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.links-header {
+.header__links {
   margin-bottom: 200px;
   display: flex;
 }
-.stays.offers-description {
+.header__links--stays.offers__description {
   color: #ffffff;
   padding-left: 24px;
   margin-top: 5px;
 }
-.line.line-header {
+.line.header__line {
   width: 50px;
   margin: 12px auto 0;
 }
-.dark-theme{
+.header__night {
   width: 30px;
   height: 30px;
   margin-top: 5px;
@@ -50,24 +50,24 @@ header {
   background-image: url("../img/logos/dark-theme.png");
   /*background-position: -154px 0;*/
 }
-.account.header-logo {
+.header__account.header__logo {
   width: 40px;
   height: 40px;
   margin-left: 24px;
   background-position: -235px 0;
 }
-.header-page {
+.header__page {
   display: flex;
   flex-wrap: wrap;
 }
-.page {
+.header__page--content {
   font-size: 50px;
   font-weight: 500;
   color: #ffffff;
   width: 100%;
   margin-bottom: 100px;
 }
-.page-description {
+.header__page--description {
   color: #ffffff;
   width: 100%;
   padding: 0 0 24px 24px;
@@ -86,11 +86,11 @@ form {
   display: flex;
   justify-content: space-between;
 }
-.form-text {
+.header__form--text {
   font-size: 18px;
   font-weight: 400;
 }
-.destination {
+.header__form--destination {
   padding-left: 24px;
   border: 1px solid #f3f3f4;
   border-right: 1px solid transparent;
@@ -98,18 +98,18 @@ form {
   flex-basis: 35%;
 }
 
-.date {
+.header__form--date {
   border: 3px solid #f5bd41;
   border-radius: 8px;
   flex-basis: 20%;
 }
-.booking {
+.header__form--booking {
   border: 1px solid #f3f3f4;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   flex-basis: 30%;
 }
-.button {
+.header__form--button {
   color: #ffffff;
   background-color: #3077c6;
   font-size: 24px;
@@ -119,25 +119,25 @@ form {
   flex-basis: 15%;
 }
 
-.apps {
+.header__apps {
   width: 100%;
   margin-bottom: 120px;
   display: flex;
   justify-content: center;
   gap: 16px;
 }
-.android {
+.header__apps--android {
   width: 135px;
   height: 40px;
   background-position: -275px 0;
 }
-.ios {
+.header__apps--ios {
   width: 120px;
   height: 40px;
   background-position: -410px 0;
 }
 
-.text-center {
+.text__center {
   text-align: center;
 }
 
@@ -165,14 +165,14 @@ h2 {
   justify-content: space-evenly;
 }
 
-.image {
+.offers__image {
   width: 90px;
   height: 90px;
   margin-top: 10px;
   margin-bottom: 55px;
 }
 
-.offers-description {
+.offers__description {
   font-size: 24px;
   font-weight: 400;
   color: #383838;
@@ -185,7 +185,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.links-footer {
+.footer__links {
   color: #ffffff;
   padding: 0 105px;
   font-size: 20px;
@@ -194,27 +194,27 @@ footer {
   flex-basis: 1440px;
 }
 
-.links-about {
+.footer__links--about {
   flex-basis: 33.3%;
 }
 
-.links-property {
+.footer__links--property {
   flex-basis: 33.3%;
 }
 
-.links-support {
+.footer__links--support {
   flex-basis: 33.3%;
 }
 
-.links-title {
+.footer__links--title {
   font-weight: 500;
 }
 
-.links-list {
+.footer__links--list {
   font-weight: 400;
 }
 
-.copyright {
+.footer__copyright {
   font-size: 14px;
   font-weight: 400;
   padding-top: 65px;
