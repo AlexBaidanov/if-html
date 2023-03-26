@@ -23,11 +23,6 @@ header {
 .header__logo {
   width: 205px;
   height: 40px;
-  /*margin-top: 5px;*/
-  background-image: url("../img/logos/logos-sprite.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 .header__links {
   margin-bottom: 200px;
@@ -47,14 +42,11 @@ header {
   height: 30px;
   margin-top: 5px;
   margin-left: 48px;
-  background-image: url("../img/logos/dark-theme.png");
-  /*background-position: -154px 0;*/
 }
-.header__account.header__logo {
+.header__account {
   width: 40px;
   height: 40px;
   margin-left: 24px;
-  background-position: -235px 0;
 }
 .header__page {
   display: flex;
@@ -129,12 +121,10 @@ form {
 .header__apps--android {
   width: 135px;
   height: 40px;
-  background-position: -275px 0;
 }
 .header__apps--ios {
   width: 120px;
   height: 40px;
-  background-position: -410px 0;
 }
 
 .text__center {
@@ -159,7 +149,6 @@ h2 {
 }
 
 .offers {
-  height: 180px;
   margin-bottom: 120px;
   display: flex;
   justify-content: space-evenly;
@@ -216,9 +205,6 @@ footer {
 
 .footer__copyright {
   font-size: 14px;
-  font-weight: 400;
   padding-top: 65px;
   padding-bottom: 120px;
-  display: flex;
-  justify-content: start;
 }
