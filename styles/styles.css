@@ -1,5 +1,12 @@
 @import url("./fonts.css");
 
+:root {
+  --color-white: #ffffff;
+  --font-regular: 400;
+  --font-medium: 500;
+  --unit:104px;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -7,7 +14,7 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: calc(1232px + var(--unit));
   margin: 0 auto;
 }
 
@@ -29,7 +36,7 @@ header {
   display: flex;
 }
 .header__links--stays.offers__description {
-  color: #ffffff;
+  color: var(--color-white);
   padding-left: 24px;
   margin-top: 5px;
 }
@@ -54,17 +61,17 @@ header {
 }
 .header__page--content {
   font-size: 50px;
-  font-weight: 500;
-  color: #ffffff;
+  font-weight: var(--font-medium);
+  color: var(--color-white);
   width: 100%;
   margin-bottom: 100px;
 }
 .header__page--description {
-  color: #ffffff;
+  color: var(--color-white);
   width: 100%;
   padding: 0 0 24px 24px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: var(--font-regular);
   display: flex;
   gap: 15%;
 }
@@ -74,13 +81,13 @@ form {
   height: 64px;
   margin-bottom: 120px;
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   display: flex;
   justify-content: space-between;
 }
 .header__form--text {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: var(--font-regular);
 }
 .header__form--destination {
   padding-left: 24px;
@@ -102,10 +109,10 @@ form {
   flex-basis: 30%;
 }
 .header__form--button {
-  color: #ffffff;
+  color: var(--color-white);
   background-color: #3077c6;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: var(--font-medium);
   border: 1px solid transparent;
   border-radius: 8px;
   flex-basis: 15%;
@@ -134,7 +141,7 @@ form {
 h2 {
   color: #383838;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: var(--font-medium);
   margin-top: 120px;
   margin-bottom: 20px;
 }
@@ -163,7 +170,7 @@ h2 {
 
 .offers__description {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: var(--font-regular);
   color: #383838;
 }
 
@@ -175,7 +182,7 @@ footer {
 }
 
 .footer__links {
-  color: #ffffff;
+  color: var(--color-white);
   padding: 0 105px;
   font-size: 20px;
   line-height: 2.5;
@@ -196,11 +203,11 @@ footer {
 }
 
 .footer__links--title {
-  font-weight: 500;
+  font-weight: var(--font-medium);
 }
 
 .footer__links--list {
-  font-weight: 400;
+  font-weight: var(--font-regular);
 }
 
 .footer__copyright {
@@ -208,3 +215,4 @@ footer {
   padding-top: 65px;
   padding-bottom: 120px;
 }
+
