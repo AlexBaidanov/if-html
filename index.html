@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripHouse</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="icon" href="img/logos/icon-logo.svg" />
@@ -189,37 +190,42 @@
     <div class="container">
       <h2 class="text__center">What do we offer</h2>
       <div class="line"></div>
-      <div class="offers">
+      <div class="offers ">
         <div class="text__center">
-          <svg class="offers__image">
+          <svg class="offers__image col-md-6 col-sm-2">
             <use href="./img/logos/logo-sprite.svg#headset" />
           </svg>
-          <p class="offers__description">Support 24/7</p>
+          <p class="offers__description--support">Support 24/7</p>
         </div>
         <div class="text__center">
-          <svg class="offers__image">
+          <svg class="offers__image col-md-6 col-sm-2">
             <use href="./img/logos/logo-sprite.svg#forum" />
           </svg>
-          <p class="offers__description">Communicate directly</p>
+          <p class="offers__description--forum">Communicate directly</p>
         </div>
         <div class="text__center">
-          <svg class="offers__image">
+          <svg class="offers__image col-md-6 col-sm-2">
             <use href="./img/logos/logo-sprite.svg#devices" />
           </svg>
-          <p class="offers__description">Book online</p>
+          <p class="offers__description--book">Book online</p>
         </div>
         <div class="text__center">
-          <svg class="offers__image">
+          <svg class="offers__image col-md-6 col-sm-2">
             <use href="./img/logos/logo-sprite.svg#thumb" />
           </svg>
-          <p class="offers__description">Real guest reviews</p>
+          <p class="offers__description--reviews">Real guest reviews</p>
         </div>
       </div>
     </div>
     <footer class="container">
+      <div class="footer__logo">
+        <svg>
+          <use href="./img/logos/logo-sprite.svg#logo-white"/>
+        </svg>
+      </div>
       <div class="footer__links">
         <div class="footer__links--about">
-          <p class="footer__links--title">About</p>
+          <p class="footer__links--title col-sm-6 _right">About</p>
           <p class="footer__links--list">How Triphouse works</p>
           <p class="footer__links--list">Careers</p>
           <p class="footer__links--list">Privacy</p>
@@ -235,7 +241,7 @@
           <p class="footer__links--list">Hostels</p>
         </div>
         <div class="footer__links--support">
-          <p class="footer__links--title">Support</p>
+          <p class="footer__links--title col-sm-6 _left">Support</p>
           <p class="footer__links--list">Contact Customer Service</p>
           <p class="footer__links--list">FAQ</p>
         </div>
