@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TripHouse</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="icon" href="img/logos/icon-logo.svg" />
@@ -33,6 +33,11 @@
               <use href="./img/logos/logo-sprite.svg#account" />
             </svg>
           </div>
+          <div>
+            <svg class="header__menu">
+              <use href="./img/logos/logo-sprite.svg#menu" />
+            </svg>
+          </div>
         </div>
       </header>
       <div class="header__page">
@@ -42,7 +47,11 @@
         </div>
         <div class="header__page--description">
           <div>Your destination or hotel name</div>
-          <div>Check-in — Check-out</div>
+          <div class="header__page--calendar">
+            <div>Check-in</div>
+            <div>—</div>
+            <div>Check-out</div>
+          </div>
         </div>
         <form>
           <input
@@ -52,12 +61,28 @@
             id="destination"
             value="New York"
           />
+          <label class="header__form--label" for="check-in">Check in</label>
+          <input
+            class="header__form--date header__form--check-in header__form--text text__center"
+            type="text"
+            name="calendar"
+            id="check-in"
+            value="Tue 15 Sept"
+          />
           <input
             class="header__form--date header__form--text text__center"
             type="text"
             name="calendar"
             id="date"
-            value="Tue 15 Sept — Sat 19 Sept"
+            value="—"
+          />
+          <label class="header__form--label" for="check-out">Check out</label>
+          <input
+            class="header__form--date header__form--check-out header__form--text text__center"
+            type="text"
+            name="calendar"
+            id="check-out"
+            value="Sat 19 Sept"
           />
           <input
             class="header__form--booking header__form--text text__center"
@@ -190,7 +215,7 @@
     <div class="container">
       <h2 class="text__center">What do we offer</h2>
       <div class="line"></div>
-      <div class="offers ">
+      <div class="offers">
         <div class="text__center">
           <svg class="offers__image col-md-6 col-sm-2">
             <use href="./img/logos/logo-sprite.svg#headset" />
@@ -220,7 +245,7 @@
     <footer class="container">
       <div class="footer__logo">
         <svg>
-          <use href="./img/logos/logo-sprite.svg#logo-white"/>
+          <use href="./img/logos/logo-sprite.svg#logo-white" />
         </svg>
       </div>
       <div class="footer__links">
