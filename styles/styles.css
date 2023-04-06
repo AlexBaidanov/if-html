@@ -92,7 +92,7 @@ header {
   font-size: 18px;
   font-weight: var(--font-regular);
   display: flex;
-  gap: 18%;
+  gap: 15%;
 }
 
 .header__page--calendar {
@@ -100,18 +100,22 @@ header {
   justify-content: space-around;
 }
 
+form {
+  display: grid;
+}
+
 .header__form--mobile {
   display: none;
 }
 
-.header__form--desktop {
+.header__form {
   width: 100%;
   margin-bottom: 120px;
   border-radius: 8px;
   background-color: var(--color-white);
   display: grid;
   grid-template-rows: 64px;
-  grid-template-columns: 38% 10% 1% 10% 8% 1% 8% 1% 8% 15%;
+  grid-template-columns: 35% 10% 2% 10% 8% 2% 8% 2% 8% 15%;
 }
 
 .header__form--text {
@@ -139,6 +143,7 @@ header {
 }
 
 .header__form--check-in {
+  text-align: end;
   border-left: 3px solid #f5bd41;
   border-radius: 8px 0 0 8px;
   grid-column: 2;
@@ -146,6 +151,7 @@ header {
 }
 
 .header__form--check-out {
+  text-align: start;
   border-right: 3px solid #f5bd41;
   border-radius: 0 8px 8px 0;
   grid-column: 4;
@@ -164,6 +170,7 @@ header {
 }
 
 .header__form--adults {
+  text-align: end;
   grid-column: 5;
   grid-row: 1;
 }
@@ -174,11 +181,12 @@ header {
 }
 
 .header__form--room {
+  text-align: start;
   grid-column: 9;
   grid-row: 1;
 }
 
-.header__form--button {
+.header__form--button-desktop {
   color: var(--color-white);
   background-color: #3077c6;
   font-size: 24px;
@@ -371,12 +379,16 @@ footer {
   }
 
   .header__form--mobile {
+    display: grid;
+  }
+
+  .header__form {
     margin-bottom: 32px;
     width: 100%;
     height: 232px;
     border-radius: 0;
     background-color: #f5bd41;
-    display: grid;
+    border: 1px solid #f5bd41;
     grid-template-rows: repeat(8, 12.5%);
     grid-template-columns: 16.6% 16.6% 1px 16.6% 16.6% 1px 16.6% 16.6%;
   }
@@ -543,8 +555,12 @@ footer {
     grid-row: 6;
   }
 
-  .header__form--button {
+  .header__form--button-mobile {
     font-size: 19px;
+    color: var(--color-white);
+    background-color: #3077c6;
+    font-weight: var(--font-medium);
+    align-content: center;
     border: 8px solid #f5bd41;
     border-top: 4px solid #f5bd41;
     border-radius: 4px;
