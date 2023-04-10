@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TripHouse</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="icon" href="img/logos/icon-logo.svg" />
@@ -33,6 +33,11 @@
               <use href="./img/logos/logo-sprite.svg#account" />
             </svg>
           </div>
+          <div>
+            <svg class="header__menu">
+              <use href="./img/logos/logo-sprite.svg#menu" />
+            </svg>
+          </div>
         </div>
       </header>
       <div class="header__page">
@@ -42,29 +47,139 @@
         </div>
         <div class="header__page--description">
           <div>Your destination or hotel name</div>
-          <div>Check-in — Check-out</div>
+          <div class="header__page--calendar">
+            <div>Check-in</div>
+            <div>&nbsp—&nbsp</div>
+            <div>Check-out</div>
+          </div>
         </div>
-        <form>
+        <form class="header__form">
           <input
-            class="header__form--destination header__form--text"
+            class="header__form--destination header__form--text header__form--desktop"
             type="text"
             name="hotel"
             id="destination"
             value="New York"
           />
           <input
-            class="header__form--date header__form--text text__center"
+            class="header__form--date header__form--check-in header__form--text header__form--desktop text__center"
+            type="text"
+            name="calendar"
+            value="Tue 15 Sept"
+          />
+          <input
+            class="header__form--date header__form--text header__form--desktop text__center"
             type="text"
             name="calendar"
             id="date"
-            value="Tue 15 Sept — Sat 19 Sept"
+            value="—"
           />
           <input
-            class="header__form--booking header__form--text text__center"
+            class="header__form--date header__form--check-out header__form--text header__form--desktop text__center"
             type="text"
-            value="2 Adults — 0 Children — 1 Room"
+            name="calendar"
+            value="Sat 19 Sept"
           />
-          <button class="header__form--button">Search</button>
+          <input
+            class="header__form--booking header__form--adults header__form--text header__form--desktop text__center"
+            type="text"
+            value="2 Adults"
+          /><input
+            class="header__form--booking header__form--text header__form--desktop text__center"
+            type="text"
+            value="—"
+          /><input
+            class="header__form--booking header__form--children header__form--text header__form--desktop text__center"
+            type="text"
+            value="0 Children"
+          /><input
+            class="header__form--booking header__form--text header__form--desktop text__center"
+            type="text"
+            value="—"
+          /><input
+            class="header__form--booking header__form--room header__form--text header__form--desktop text__center"
+            type="text"
+            value="1 Room"
+          />
+          <button class="header__form--button-desktop header__form--desktop">
+            Search
+          </button>
+          <div class="header__form--destination-search header__form--mobile">
+            <svg class="header__form--search-icon">
+              <use href="./img/logos/logo-sprite.svg#search" />
+            </svg>
+          </div>
+          <input
+            class="header__form--destination header__form--text header__form--mobile"
+            type="text"
+            name="hotel"
+            value="Your destination or hotel name"
+          />
+          <input
+            class="header__form--date header__form--check-in header__form--text header__form--mobile _mobile text__center"
+            type="text"
+            name="calendar"
+            id="check-in"
+            value="Check-in"
+          />
+          <input
+            class="header__form--date header__form--first-date header__form--text header__form--mobile text__center"
+            type="text"
+            name="calendar"
+            value="Tue 15 Sept 2022"
+          />
+          <input
+            class="header__form--date header__form--check-out header__form--text header__form--mobile _mobile text__center"
+            type="text"
+            name="calendar"
+            id="check-out"
+            value="Check-out"
+          />
+          <input
+            class="header__form--date header__form--last-date header__form--text header__form--mobile text__center"
+            type="text"
+            name="calendar"
+            value="Sat 19 Sept 2022"
+          />
+          <input
+            class="header__form--booking header__form--adults header__form--text header__form--mobile _mobile text__center"
+            type="text"
+            value="Adults"
+          />
+          <input
+            class="header__form--booking header__form--adults-num header__form--text header__form--mobile text__center"
+            type="text"
+            value="2"
+          />
+          <div class="header__form--border-left header__form--mobile">
+            <div class="header__form--border-gray"></div>
+          </div>
+          <input
+            class="header__form--booking header__form--children header__form--text header__form--mobile _mobile text__center"
+            type="text"
+            value="Children"
+          />
+          <input
+            class="header__form--booking header__form--children-num header__form--text header__form--mobile text__center"
+            type="text"
+            value="0"
+          />
+          <div class="header__form--border-right header__form--mobile">
+            <div class="header__form--border-gray"></div>
+          </div>
+          <input
+            class="header__form--booking header__form--room header__form--text header__form--mobile _mobile text__center"
+            type="text"
+            value="Room"
+          />
+          <input
+            class="header__form--booking header__form--room-num header__form--text header__form--mobile text__center"
+            type="text"
+            value="1"
+          />
+          <button class="header__form--button-mobile header__form--mobile">
+            Search
+          </button>
         </form>
         <div class="header__apps">
           <div>
@@ -190,27 +305,27 @@
     <div class="container">
       <h2 class="text__center">What do we offer</h2>
       <div class="line"></div>
-      <div class="offers ">
+      <div class="offers">
         <div class="text__center">
-          <svg class="offers__image col-md-6 col-sm-2">
+          <svg class="offers__image">
             <use href="./img/logos/logo-sprite.svg#headset" />
           </svg>
           <p class="offers__description--support">Support 24/7</p>
         </div>
         <div class="text__center">
-          <svg class="offers__image col-md-6 col-sm-2">
+          <svg class="offers__image">
             <use href="./img/logos/logo-sprite.svg#forum" />
           </svg>
           <p class="offers__description--forum">Communicate directly</p>
         </div>
         <div class="text__center">
-          <svg class="offers__image col-md-6 col-sm-2">
+          <svg class="offers__image">
             <use href="./img/logos/logo-sprite.svg#devices" />
           </svg>
           <p class="offers__description--book">Book online</p>
         </div>
         <div class="text__center">
-          <svg class="offers__image col-md-6 col-sm-2">
+          <svg class="offers__image">
             <use href="./img/logos/logo-sprite.svg#thumb" />
           </svg>
           <p class="offers__description--reviews">Real guest reviews</p>
@@ -220,7 +335,7 @@
     <footer class="container">
       <div class="footer__logo">
         <svg>
-          <use href="./img/logos/logo-sprite.svg#logo-white"/>
+          <use href="./img/logos/logo-sprite.svg#logo-white" />
         </svg>
       </div>
       <div class="footer__links">
