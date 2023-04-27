@@ -1,7 +1,16 @@
 @import url("./fonts.css");
 
 :root {
-  --color-white: #ffffff;
+  --white: #ffffff;
+  --yellow: #f5bd41;
+  --stroke-color: #f3f3f4;
+  --blue: #10367c;
+  --accent-blue: #3077c6;
+  --bg-color: #eaf0f9;
+  --text-color: #383838;
+  --secondary-text: #bfbfbf;
+
+
   --font-regular: 400;
   --font-medium: 500;
   --col-width: calc(100% / 12);
@@ -14,8 +23,9 @@
 }
 
 .container {
-  max-width: 100%;
-  padding: 120px 105px 0;
+  max-width: 1440px;
+  width: 100%;
+  padding: 120px 105px;
   margin: 0 auto;
 }
 
@@ -46,7 +56,7 @@ header {
 }
 
 [class*="header__links--"].offers__description {
-  color: var(--color-white);
+  color: var(--white);
   margin-left: 24px;
   margin-top: 5px;
   position: relative;
@@ -58,7 +68,7 @@ header {
   content: "";
   width: 50px;
   height: 4px;
-  background-color: #f5bd41;
+  background-color: var(--yellow);
   position: absolute;
   top: 100%;
   transform: translate(-108%);
@@ -69,7 +79,7 @@ header {
   content: "";
   width: 50px;
   height: 4px;
-  background-color: #f5bd41;
+  background-color: var(--yellow);
   position: absolute;
   top: 100%;
   transform: translate(-165%);
@@ -100,13 +110,13 @@ header {
 .header__page--content {
   font-size: 50px;
   font-weight: var(--font-medium);
-  color: var(--color-white);
+  color: var(--white);
   width: 100%;
   margin-bottom: 100px;
 }
 
 .header__page--description {
-  color: var(--color-white);
+  color: var(--white);
   width: 100%;
   padding: 0 0 24px 24px;
   font-size: 18px;
@@ -132,7 +142,7 @@ form {
   width: 100%;
   margin-bottom: 120px;
   border-radius: 8px;
-  background-color: var(--color-white);
+  background-color: var(--white);
   display: grid;
   grid-template-rows: 64px;
   grid-template-columns: 35% 10% 2% 10% 8% 2% 8% 2% 8% 15%;
@@ -141,13 +151,13 @@ form {
 .header__form--text {
   font-size: 18px;
   font-weight: var(--font-regular);
-  color: #383838;
+  color: var(--text-color);
 }
 
 .header__form--destination {
   outline: none;
   padding-left: 24px;
-  border: 1px solid #f3f3f4;
+  border: 1px solid var(--stroke-color);
   border-right: 1px solid transparent;
   border-radius: 8px 0 0 8px;
   grid-column: 1;
@@ -157,14 +167,14 @@ form {
 .header__form--date {
   outline: none;
   border: none;
-  border-top: 3px solid #f5bd41;
-  border-bottom: 3px solid #f5bd41;
+  border-top: 3px solid var(--yellow);
+  border-bottom: 3px solid var(--yellow);
   margin: 0;
 }
 
 .header__form--check-in {
   text-align: end;
-  border-left: 3px solid #f5bd41;
+  border-left: 3px solid var(--yellow);
   border-radius: 8px 0 0 8px;
   grid-column: 2;
   grid-row: 1;
@@ -172,7 +182,7 @@ form {
 
 .header__form--check-out {
   text-align: start;
-  border-right: 3px solid #f5bd41;
+  border-right: 3px solid var(--yellow);
   border-radius: 0 8px 8px 0;
   grid-column: 4;
   grid-row: 1;
@@ -184,7 +194,7 @@ form {
 
 .header__form--booking {
   outline: none;
-  border: 1px solid #f3f3f4;
+  border: 1px solid var(--stroke-color);
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
 }
@@ -207,8 +217,8 @@ form {
 }
 
 .header__form--button-desktop {
-  color: var(--color-white);
-  background-color: #3077c6;
+  color: var(--white);
+  background-color: var(--accent-blue);
   font-size: 24px;
   font-weight: var(--font-medium);
   border: 1px solid transparent;
@@ -236,7 +246,7 @@ form {
 }
 
 .offers__title {
-  color: #383838;
+  color: var(--text-color);
   font-size: 40px;
   font-weight: var(--font-medium);
   margin-bottom: 104px;
@@ -248,7 +258,7 @@ form {
   content: "";
   width: 100px;
   height: 4px;
-  background-color: #f5bd41;
+  background-color: var(--yellow);
   position: absolute;
   top: 100%;
   left: 50%;
@@ -259,7 +269,7 @@ form {
   padding: 0;
   margin-bottom: 120px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .offers__image {
@@ -272,11 +282,11 @@ form {
 [class*="offers__description"] {
   font-size: 24px;
   font-weight: var(--font-regular);
-  color: #383838;
+  color: var(--text-color);
 }
 
 .homes {
-  background-color: #eaf0f9;
+  background-color: var(--bg-color);
 }
 
 .homes__title.offers__title {
@@ -300,17 +310,17 @@ form {
 }
 
 .homes__image--description {
-  color: #3077c6;
+  color: var(--accent-blue);
   margin-bottom: 24px;
 }
 
 .homes__image--place {
-  color: #bfbfbf;
+  color: var(--secondary-text);
   margin-bottom: 120px;
 }
 
 .homes__arrow--ellipse {
-  background-color: #f3f3f4;
+  background-color: var(--stroke-color);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -323,7 +333,7 @@ form {
 .homes__arrow--pike {
   width: 15px;
   height: 15px;
-  border: 2px solid #383838;
+  border: 2px solid var(--text-color);
   border-radius: 2px;
   border-left: 0;
   border-top: 0;
@@ -331,7 +341,7 @@ form {
 }
 
 footer {
-  background-color: #10367c;
+  background-color: var(--blue);
   display: flex;
   flex-wrap: wrap;
 }
@@ -341,7 +351,7 @@ footer {
 }
 
 .footer__links {
-  color: var(--color-white);
+  color: var(--white);
   font-size: 20px;
   line-height: 2.5;
   display: flex;
@@ -468,8 +478,8 @@ footer {
     width: 100%;
     height: 232px;
     border-radius: 0;
-    background-color: #f5bd41;
-    border: 1px solid #f5bd41;
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
     grid-template-rows: repeat(8, 12.5%);
     grid-template-columns: 16.6% 16.6% 1px 16.6% 16.6% 1px 16.6% 16.6%;
   }
@@ -490,9 +500,9 @@ footer {
   }
 
   .header__form--destination-search {
-    background-color: var(--color-white);
-    border: 8px solid #f5bd41;
-    border-bottom: 4px solid #f5bd41;
+    background-color: var(--white);
+    border: 8px solid var(--yellow);
+    border-bottom: 4px solid var(--yellow);
     border-right: transparent;
     border-radius: 4px;
     padding: 16px 8px 16px 12px;
@@ -509,9 +519,9 @@ footer {
 
   .header__form--destination {
     font-size: 15px;
-    border: 8px solid #f5bd41;
+    border: 8px solid var(--yellow);
     border-left: transparent;
-    border-bottom: 4px solid #f5bd41;
+    border-bottom: 4px solid var(--yellow);
     border-radius: 4px;
     padding: 0;
     grid-column: 2 / span 7;
@@ -520,8 +530,8 @@ footer {
 
   .header__form--check-in {
     outline: none;
-    border: 4px solid #f5bd41;
-    border-left: 8px solid #f5bd41;
+    border: 4px solid var(--yellow);
+    border-left: 8px solid var(--yellow);
     border-bottom: transparent;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -531,8 +541,8 @@ footer {
 
   .header__form--first-date {
     outline: none;
-    border: 4px solid #f5bd41;
-    border-left: 8px solid #f5bd41;
+    border: 4px solid var(--yellow);
+    border-left: 8px solid var(--yellow);
     border-top: transparent;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -542,8 +552,8 @@ footer {
 
   .header__form--check-out {
     outline: none;
-    border: 4px solid #f5bd41;
-    border-right: 8px solid #f5bd41;
+    border: 4px solid var(--yellow);
+    border-right: 8px solid var(--yellow);
     border-bottom: transparent;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -553,8 +563,8 @@ footer {
 
   .header__form--last-date {
     outline: none;
-    border: 4px solid #f5bd41;
-    border-right: 8px solid #f5bd41;
+    border: 4px solid var(--yellow);
+    border-right: 8px solid var(--yellow);
     border-top: transparent;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -563,11 +573,11 @@ footer {
   }
 
   .header__form--booking {
-    border: 4px solid #f5bd41;
+    border: 4px solid var(--yellow);
   }
 
   .header__form--adults {
-    border-left: 8px solid #f5bd41;
+    border-left: 8px solid var(--yellow);
     border-right: transparent;
     border-bottom: transparent;
     border-top-left-radius: 4px;
@@ -576,7 +586,7 @@ footer {
   }
 
   .header__form--adults-num {
-    border-left: 8px solid #f5bd41;
+    border-left: 8px solid var(--yellow);
     border-right: transparent;
     border-top: transparent;
     border-bottom-left-radius: 4px;
@@ -586,14 +596,14 @@ footer {
 
   .header__form--children {
     border: transparent;
-    border-top: 4px solid #f5bd41;
+    border-top: 4px solid var(--yellow);
     grid-column: 4 / span 2;
     grid-row: 5;
   }
 
   .header__form--children-num {
     border: transparent;
-    border-bottom: 4px solid #f5bd41;
+    border-bottom: 4px solid var(--yellow);
     grid-column: 4 / span 2;
     grid-row: 6;
   }
@@ -601,25 +611,25 @@ footer {
   .header__form--border-left {
     grid-column: 3;
     grid-row: 5/7;
-    background-color: #ffffff;
+    background-color: var(--white);
     margin: 4px 0;
   }
 
   .header__form--border-gray {
     height: 32px;
     margin: 8px 0;
-    background-color: #bfbfbf;
+    background-color: var(--secondary-text);
   }
 
   .header__form--border-right {
     grid-column: 6;
     grid-row: 5/7;
-    background-color: #ffffff;
+    background-color: var(--white);
     margin: 4px 0;
   }
 
   .header__form--room {
-    border-right: 8px solid #f5bd41;
+    border-right: 8px solid var(--yellow);
     border-left: transparent;
     border-bottom: transparent;
     border-top-right-radius: 4px;
@@ -628,7 +638,7 @@ footer {
   }
 
   .header__form--room-num {
-    border-right: 8px solid #f5bd41;
+    border-right: 8px solid var(--yellow);
     border-left: transparent;
     border-top: transparent;
     border-bottom-right-radius: 4px;
@@ -638,12 +648,12 @@ footer {
 
   .header__form--button-mobile {
     font-size: 19px;
-    color: var(--color-white);
-    background-color: #3077c6;
+    color: var(--white);
+    background-color: var(--accent-blue);
     font-weight: var(--font-medium);
     align-content: center;
-    border: 8px solid #f5bd41;
-    border-top: 4px solid #f5bd41;
+    border: 8px solid var(--yellow);
+    border-top: 4px solid var(--yellow);
     border-radius: 4px;
     padding: 0;
     grid-column: 1 / span 8;
