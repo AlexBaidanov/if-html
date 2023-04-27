@@ -33,14 +33,14 @@
   text-align: center;
 }
 
-.header {
+header.container {
   min-height: 100vh;
   padding-top: 50px;
   background-image: url("../img/top-section/top-section-background.png");
   background-size: cover;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
 }
@@ -48,6 +48,7 @@ header {
 .header__logo {
   width: 205px;
   height: 40px;
+  fill: var(--accent-blue);
 }
 
 .header__links {
@@ -229,7 +230,6 @@ form {
 
 .header__apps {
   width: 100%;
-  margin-bottom: 120px;
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -265,7 +265,7 @@ form {
   transform: translate(-50%, 500%);
 }
 
-.offers {
+.offers__variants {
   padding: 0;
   margin-bottom: 120px;
   display: flex;
@@ -279,7 +279,7 @@ form {
   margin-bottom: 55px;
 }
 
-[class*="offers__description"] {
+.offers__description {
   font-size: 24px;
   font-weight: var(--font-regular);
   color: var(--text-color);
@@ -316,7 +316,6 @@ form {
 
 .homes__image--place {
   color: var(--secondary-text);
-  margin-bottom: 120px;
 }
 
 .homes__arrow--ellipse {
@@ -381,7 +380,6 @@ footer {
 .footer__copyright {
   font-size: 14px;
   padding-top: 65px;
-  padding-bottom: 120px;
 }
 
 @media (max-width: 768px) {
@@ -414,11 +412,11 @@ footer {
   }
 
   .container{
-    padding: 0;
+    padding: 40px 16px;
   }
 
-  .container.header {
-    padding: 16px 16px 0;
+  header.container{
+    padding-top: 12px;
   }
 
   .header__logo {
@@ -494,7 +492,7 @@ footer {
     padding-left: 8px;
   }
 
-  .header__form--text._mobile {
+  [class*='_mobile'] {
     font-size: 12px;
     font-weight: var(--font-regular);
   }
@@ -660,8 +658,8 @@ footer {
     grid-row: 7 / span 2;
   }
 
-  .header__apps {
-    margin-bottom: 40px;
+  .offers.container{
+    padding: 0 16px;
   }
 
   .offers__title {
@@ -674,10 +672,10 @@ footer {
     display: none;
   }
 
-  .offers {
+  .offers__variants {
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0;
+    margin: 0 0 8px 0;
   }
 
   .offers__image {
@@ -685,55 +683,29 @@ footer {
     padding-bottom: 16px;
   }
 
-  [class*="offers__description--"] {
+  .offers__description {
     padding-bottom: 32px;
     font-size: 15px;
   }
-
-  .offers__description--reviews {
-    margin-bottom: 8px;
-  }
-
-  .homes {
-    padding: 0 16px;
-  }
-
-  .homes__title{
-    padding-top: 40px;
+  .homes__title {
+    padding: 0;
   }
 
   .homes__variants {
     justify-content: space-evenly;
+    padding: 0;
   }
 
   .homes__variants--image {
     margin-bottom: 8px;
   }
 
-  .homes__variants--hotel {
-    font-size: 12px;
-    font-weight: var(--font-regular);
-  }
-
-  .homes__variants--apartment {
-    font-size: 12px;
-    font-weight: var(--font-regular);
-  }
-
-  .homes__variants--villa {
-    display: none;
-  }
-
-  .homes__variants--hostel {
+  .homes__variants--item._hide {
     display: none;
   }
 
   .homes__image--description {
     margin-bottom: 4px;
-  }
-
-  .homes__image--place {
-    margin-bottom: 40px;
   }
 
   .homes__arrow--ellipse {
@@ -755,7 +727,8 @@ footer {
   .footer__logo {
     width: 98px;
     height: 19px;
-    margin: 40px auto;
+    margin: 0 auto 40px;
+    fill: var(--white);
     display: flex;
   }
 
@@ -787,7 +760,5 @@ footer {
 
   .footer__copyright {
     display: inline;
-    font-size: 12px;
-    margin-bottom: 40px;
   }
 }
