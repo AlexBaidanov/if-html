@@ -8,19 +8,16 @@
     <link rel="icon" href="img/logos/icon-logo.svg" />
   </head>
   <body>
-    <div class="container header">
-      <header>
+    <header class="container">
+      <div class="header">
         <div>
           <svg class="header__logo">
             <use href="./img/logos/logo-sprite.svg#logo" />
           </svg>
         </div>
         <div class="header__links">
-          <div class="header__links--stays offers__description">
-            Stays
-            <div class="line header__line"></div>
-          </div>
-          <div class="header__links--stays offers__description">
+          <div class="header__links--stays offers__description">Stays</div>
+          <div class="header__links--attractions offers__description">
             Attractions
           </div>
           <div>
@@ -39,7 +36,7 @@
             </svg>
           </div>
         </div>
-      </header>
+      </div>
       <div class="header__page">
         <div class="header__page--content">
           Discover stays <br />
@@ -301,41 +298,70 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <h2 class="text__center">What do we offer</h2>
-      <div class="line"></div>
-      <div class="offers">
+    </header>
+    <div class="offers container">
+      <h2 class="offers__title text__center">What do we offer</h2>
+      <div class="offers__variants">
         <div class="text__center">
           <svg class="offers__image">
             <use href="./img/logos/logo-sprite.svg#headset" />
           </svg>
-          <p class="offers__description--support">Support 24/7</p>
+          <p class="offers__description">Support 24/7</p>
         </div>
         <div class="text__center">
           <svg class="offers__image">
             <use href="./img/logos/logo-sprite.svg#forum" />
           </svg>
-          <p class="offers__description--forum">Communicate directly</p>
+          <p class="offers__description">Communicate directly</p>
         </div>
         <div class="text__center">
           <svg class="offers__image">
             <use href="./img/logos/logo-sprite.svg#devices" />
           </svg>
-          <p class="offers__description--book">Book online</p>
+          <p class="offers__description">Book online</p>
         </div>
         <div class="text__center">
           <svg class="offers__image">
             <use href="./img/logos/logo-sprite.svg#thumb" />
           </svg>
-          <p class="offers__description--reviews">Real guest reviews</p>
+          <p class="offers__description">Real guest reviews</p>
+        </div>
+      </div>
+    </div>
+    <div class="homes container">
+      <h2 class="homes__title text__center offers__title">
+        Homes guests loves
+      </h2>
+      <div class="homes__variants offers__description">
+        <div class="homes__variants--item _mobile">
+          <img class="homes__variants--image" src="./img/homes/hotel.png" />
+          <p class="homes__image--description">Hotel Leopold</p>
+          <p class="homes__image--place">Saint Petersburg, Russia</p>
+        </div>
+        <div class="homes__variants--item _mobile">
+          <img class="homes__variants--image" src="./img/homes/apartment.png" />
+          <p class="homes__image--description">Apartment Sunshine</p>
+          <p class="homes__image--place">Santa Cruz de Tenerife, <br> Spain</p>
+        </div>
+        <div class="homes__variants--item _hide">
+          <img class="homes__variants--image" src="./img/homes/villa.png" />
+          <p class="homes__image--description">Villa Kunerad</p>
+          <p class="homes__image--place">Vysokie Tatry, Slowakia</p>
+        </div>
+        <div class="homes__variants--item _hide">
+          <img class="homes__variants--image" src="./img/homes/hostel.png" />
+          <p class="homes__image--description">Hostel Friendship</p>
+          <p class="homes__image--place">Berlin, Germany</p>
+        </div>
+        <div class="homes__arrow--ellipse">
+          <div class="homes__arrow--pike"></div>
         </div>
       </div>
     </div>
     <footer class="container">
       <div class="footer__logo">
         <svg>
-          <use href="./img/logos/logo-sprite.svg#logo-white" />
+          <use href="./img/logos/logo-sprite.svg#logo" />
         </svg>
       </div>
       <div class="footer__links">
@@ -361,7 +387,7 @@
           <p class="footer__links--list">FAQ</p>
         </div>
       </div>
-      <div class="footer__copyright footer__links footer__links--list">
+      <div class="footer__copyright footer__links footer__links--list _mobile">
         &copy; 2022Triphouse, Inc. All rights reserved
       </div>
     </footer>

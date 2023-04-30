@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "2.8.4"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.1"
   }
 }
