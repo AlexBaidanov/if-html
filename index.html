@@ -15,7 +15,7 @@
             <use href="./img/logos/logo-sprite.svg#logo" />
           </svg>
         </div>
-        <div class="header__links">
+        <nav class="header__links">
           <div class="header__links--stays offers__description">Stays</div>
           <div class="header__links--attractions offers__description">
             Attractions
@@ -35,7 +35,7 @@
               <use href="./img/logos/logo-sprite.svg#menu" />
             </svg>
           </div>
-        </div>
+        </nav>
       </div>
       <div class="header__page">
         <div class="header__page--content">
@@ -299,8 +299,9 @@
         </div>
       </div>
     </header>
-    <div class="offers container">
-      <h2 class="offers__title text__center">What do we offer</h2>
+    <main>
+    <section class="offers container">
+      <h2 class="offers__title title text__center">What do we offer</h2>
       <div class="offers__variants">
         <div class="text__center">
           <svg class="offers__image">
@@ -327,9 +328,9 @@
           <p class="offers__description">Real guest reviews</p>
         </div>
       </div>
-    </div>
-    <div class="homes container">
-      <h2 class="homes__title text__center offers__title">
+    </section>
+    <section class="homes container">
+      <h2 class="homes__title text__center title">
         Homes guests loves
       </h2>
       <div class="homes__variants offers__description">
@@ -353,11 +354,96 @@
           <p class="homes__image--description">Hostel Friendship</p>
           <p class="homes__image--place">Berlin, Germany</p>
         </div>
-        <div class="homes__arrow--ellipse">
+        <button class="homes__arrow--ellipse">
           <div class="homes__arrow--pike"></div>
+        </button>
+      </div>
+    </section>
+    <section class="destination container">
+      <h2 class="destination__title text__center title">
+        The best destinations
+      </h2>
+      <div class="destination__tabs offers__description">
+        <button class="destination__tab">Regions</button>
+        <button class="destination__tab">Cities</button>
+        <button class="destination__tab _places">Places of interest</button>
+        <button class="destination__tab _place">Places</button>
+      </div>
+      <div class="destination__variants offers__description">
+        <div class="destination__variants--item _mobile">
+          <a class="destination__variants--link" href="#">
+            <img
+                    class="destination__variants--image"
+                    src="./img/destination/maldives.png"
+                    alt="Maldives"
+            />
+            <button class="destination__variants--button">Book now</button>
+          </a>
+          <p class="destination__variants--description">Maldives</p>
+        </div>
+        <div class="destination__variants--item _mobile">
+          <a class="destination__variants--link" href="#">
+            <img
+                    class="destination__variants--image"
+                    src="./img/destination/spain.png"
+                    alt="Spain"
+            />
+            <button class="destination__variants--button">Book now</button>
+          </a>
+          <p class="destination__variants--description">Spain</p>
+        </div>
+        <div class="destination__variants--item _hide">
+          <a class="destination__variants--link" href="#">
+            <img
+                    class="destination__variants--image"
+                    src="./img/destination/norway.png"
+                    alt="Norway"
+            />
+            <button class="destination__variants--button">Book now</button>
+          </a>
+          <p class="destination__variants--description">Norway</p>
+        </div>
+        <div class="destination__variants--item _hide">
+          <a class="destination__variants--link" href="#">
+            <img
+                    class="destination__variants--image"
+                    src="./img/destination/island.png"
+                    alt="Island"
+            />
+            <button class="destination__variants--button">Book now</button>
+          </a>
+          <p class="destination__variants--description">Island</p>
+        </div>
+        <button class="destination__arrow--ellipse">
+          <div class="destination__arrow--pike"></div>
+        </button>
+      </div>
+    </section>
+    <section class="sign-up container">
+      <div class="sign-up__install">
+        <p>Install</p>
+      </div>
+      <div class="sign-up__user">
+        <svg class="sign-up__user--logo _hide">
+          <use href="./img/logos/logo-sprite.svg#logo" />
+        </svg>
+        <div class="sign-up__user--sign offers__description">
+          <svg class="sign-up__logo--sm">
+            <use href="./img/logos/logo-sprite.svg#sign-up-logo-sm" />
+          </svg>
+          <p class="sign-up__user--description">
+            Sign up and get 20% off your first booking
+          </p>
+          <button class="sign-up__sign--button _hide">Sign up</button>
         </div>
       </div>
-    </div>
+      <button class="sign-up__close">
+        <svg class="sign-up__close--logo">
+          <use href="./img/logos/logo-sprite.svg#close" />
+        </svg>
+      </button>
+    </section>
+    </main>
     <footer class="container">
       <div class="footer__logo">
         <svg>
