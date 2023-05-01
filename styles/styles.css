@@ -365,6 +365,10 @@ form {
   transform: translate(25%, 5%) rotate(315deg);
 }
 
+.destination{
+  position: relative;
+}
+
 .destination__tabs {
   width: 622px;
   margin-bottom: 65px;
@@ -400,7 +404,6 @@ form {
 .destination__variants {
   display: flex;
   justify-content: space-between;
-  position: relative;
   gap: 16px;
 }
 
@@ -466,7 +469,7 @@ form {
 
 .destination__arrow--ellipse {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, calc(-50% + 105px));
 }
@@ -907,8 +910,11 @@ footer {
   [class*="--ellipse"] {
     width: 28px;
     height: 28px;
-    top: 25%;
-    left: 95%;
+  }
+
+  .homes__arrow--ellipse{
+    top: 50%;
+    left: 91%;
   }
 
   [class*="arrow--pike"] {
@@ -958,8 +964,8 @@ footer {
   }
 
   .destination__arrow--ellipse {
-    top: -10%;
-    left: 99%;
+    top: 35%;
+    left: 95%;
   }
 
   .destination__arrow--pike {
