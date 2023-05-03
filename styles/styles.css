@@ -40,11 +40,14 @@
   position: relative;
 }
 
-header.container {
+header {
   min-height: 100vh;
-  padding-top: 50px;
   background-image: url("../img/top-section/top-section-background.png");
   background-size: cover;
+}
+
+header > .container {
+  padding-top: 50px;
 }
 
 .header {
@@ -346,10 +349,10 @@ form {
   box-shadow: 1px 3px 10px 1px rgba(56, 56, 56, 0.2);
 }
 
-.homes__arrow--ellipse{
+.homes__arrow--ellipse {
   position: absolute;
   top: 50%;
-  left: 91.5%;
+  left: 91%;
 }
 
 [class*="arrow--pike"] {
@@ -361,11 +364,11 @@ form {
   border-top: 0;
 }
 
-.homes__arrow--pike{
+.homes__arrow--pike {
   transform: translate(25%, 5%) rotate(315deg);
 }
 
-.destination{
+.destination {
   position: relative;
 }
 
@@ -912,7 +915,7 @@ footer {
     height: 28px;
   }
 
-  .homes__arrow--ellipse{
+  .homes__arrow--ellipse {
     top: 50%;
     left: 91%;
   }
@@ -954,7 +957,7 @@ footer {
     margin-bottom: 8px;
   }
 
-  .destination__variants--description{
+  .destination__variants--description {
     margin: 0;
   }
 
