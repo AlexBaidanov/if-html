@@ -36,7 +36,7 @@
   color: var(--text-color);
   font-size: 40px;
   font-weight: var(--font-medium);
-  margin-bottom: 104px;
+  margin-bottom: 105px;
   position: relative;
 }
 
@@ -282,6 +282,11 @@ form {
   height: 40px;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+}
+
 .offers__title:after {
   display: inline-block;
   content: "";
@@ -353,6 +358,7 @@ form {
   position: absolute;
   top: 50%;
   left: 91%;
+  transform: translateY(-50%);
 }
 
 [class*="arrow--pike"] {
@@ -536,6 +542,149 @@ form {
 .sign-up__close--logo {
   width: 26px;
   height: 26px;
+}
+
+.reviews {
+  position: relative;
+}
+
+.reviews__variants {
+  display: flex;
+  gap: 16px;
+}
+
+.reviews__item {
+  width: 400px;
+  min-height: 760px;
+  margin: 0 auto;
+}
+
+.reviews__image {
+  width: 100%;
+}
+
+.reviews__link {
+  display: block;
+  position: relative;
+  cursor: default;
+}
+
+.reviews__link:before {
+  content: "From 250 USD";
+  padding-left: 24px;
+  color: var(--white);
+  font-weight: var(--font-medium);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  background-color: rgba(56, 56, 56, 0.4);
+  box-shadow: inset 0 4px 70px rgba(56, 56, 56, 0.5);
+  cursor: pointer;
+  opacity: 0;
+}
+
+.reviews__link._netherlands:before {
+  content: "From 70 USD";
+}
+
+.reviews__link._marocco:before {
+  content: "From 100 USD";
+}
+
+.reviews__link:hover:before {
+  opacity: 1;
+  transition: 250ms ease-in-out;
+}
+
+.reviews__description {
+  min-height: 360px;
+  margin-top: -5px;
+  padding: 24px;
+  font-size: 18px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.reviews__description-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.reviews__description-location {
+  color: var(--accent-blue);
+}
+
+.reviews__description-place {
+  margin-bottom: 16px;
+  font-weight: var(--font-medium);
+}
+
+.reviews__description-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.reviews__description-grade {
+  width: 48px;
+  height: 32px;
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: end;
+}
+
+.reviews__description-number {
+  font-size: 14px;
+  color: var(--secondary-text);
+}
+
+.reviews__description-person {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__description-logo {
+  width: 64px;
+  height: 64px;
+  fill: var(--secondary-text);
+}
+
+.reviews__description-reviewer {
+  margin: 24px;
+}
+
+.reviews__description-name{
+  margin-bottom: 8px;
+}
+
+.reviews__description-homeland {
+  color: var(--secondary-text);
+}
+
+.reviews__arrow--ellipse {
+  border: transparent;
+  position: absolute;
+  top: 40%;
+  left: 91%;
+  transform: translateY(-50%);
+}
+
+.reviews__arrow--pike {
+  transform: translate(25%, 10%) rotate(315deg);
+}
+
+.reviews__navigation{
+  display: none;
 }
 
 footer {
@@ -981,6 +1130,7 @@ footer {
     background-color: var(--white);
     flex-direction: row-reverse;
     align-items: center;
+    order: 5;
   }
 
   .sign-up.container {
@@ -1024,6 +1174,61 @@ footer {
   .sign-up__close--logo {
     width: 16px;
     height: 16px;
+  }
+
+  .reviews{
+    background-color: var(--bg-color);
+    order: 4;
+  }
+
+  .reviews__arrow--ellipse {
+    display: none;
+  }
+
+  .reviews__variants{
+    min-height: 625px;
+  }
+
+  .reviews__item{
+    min-height: 625px;
+  }
+
+  .reviews__description {
+    padding: 12px 0 0 0;
+  }
+
+  .reviews__description-top {
+    margin-bottom: 0;
+  }
+
+  .reviews__description-place {
+    margin-bottom: 8px;
+  }
+
+  .reviews__description-grade{
+    width: 40px;
+    height: 26px;
+    margin-bottom: 4px;
+  }
+
+  .reviews__description-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .reviews__description {
+    /*min-height: 300px;*/
+    font-size: 15px;
+  }
+
+  .reviews__navigation{
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   footer {
