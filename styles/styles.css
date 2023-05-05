@@ -331,17 +331,17 @@ main{
   position: relative;
 }
 
-.homes__variants--image {
+.homes__image {
   width: 100%;
   margin-bottom: 24px;
 }
 
-.homes__image--description {
+.homes__description {
   color: var(--accent-blue);
   margin-bottom: 24px;
 }
 
-.homes__image--place {
+.homes__place {
   color: var(--secondary-text);
 }
 
@@ -416,17 +416,17 @@ main{
   gap: 16px;
 }
 
-.destination__variants--image {
-  width: 100%;
-  margin-bottom: 24px;
-}
-
-.destination__variants--link {
+.destination__link {
   display: block;
   position: relative;
 }
 
-.destination__variants--link:before {
+.destination__image {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.destination__link:before {
   content: "";
   position: absolute;
   top: 0;
@@ -438,7 +438,7 @@ main{
   opacity: 0;
 }
 
-.destination__variants--button {
+.destination__button {
   width: 128px;
   height: 48px;
   color: var(--accent-blue);
@@ -454,7 +454,7 @@ main{
   opacity: 0;
 }
 
-.destination__variants--button:before {
+.destination__button:before {
   content: "";
   display: inline-block;
   width: 296px;
@@ -465,13 +465,13 @@ main{
   transform: translate(-50%, -50%);
 }
 
-.destination__variants--link:hover:before,
-.destination__variants--button:hover {
+.destination__link:hover:before,
+.destination__button:hover {
   opacity: 1;
   transition: 250ms ease-in-out;
 }
 
-.destination__variants--description {
+.destination__description {
   color: var(--accent-blue);
   margin-bottom: 88px;
 }
@@ -504,18 +504,18 @@ main{
   display: flex;
 }
 
-.sign-up__user--logo {
+.sign-up__logo {
   width: 86px;
   height: 86px;
   margin: 0 24px;
 }
 
-.sign-up__user--description {
+.sign-up__description {
   font-weight: var(--font-medium);
   margin-bottom: 21px;
 }
 
-.sign-up__sign--button {
+.sign-up__button {
   width: 128px;
   height: 48px;
   color: var(--accent-blue);
@@ -609,29 +609,29 @@ main{
   background-color: var(--bg-color);
 }
 
-.reviews__description-top {
+.reviews__top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 6px;
 }
 
-.reviews__description-location {
+.reviews__location {
   color: var(--accent-blue);
 }
 
-.reviews__description-place {
+.reviews__place {
   margin-bottom: 16px;
   font-weight: var(--font-medium);
 }
 
-.reviews__description-score {
+.reviews__score {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.reviews__description-grade {
+.reviews__grade {
   width: 48px;
   height: 32px;
   color: var(--white);
@@ -643,31 +643,31 @@ main{
   text-align: end;
 }
 
-.reviews__description-number {
+.reviews__number {
   font-size: 14px;
   color: var(--secondary-text);
 }
 
-.reviews__description-person {
+.reviews__person {
   display: flex;
   align-items: center;
 }
 
-.reviews__description-logo {
+.reviews__logo {
   width: 64px;
   height: 64px;
   fill: var(--secondary-text);
 }
 
-.reviews__description-reviewer {
+.reviews__reviewer {
   margin: 24px;
 }
 
-.reviews__description-name{
+.reviews__name{
   margin-bottom: 8px;
 }
 
-.reviews__description-homeland {
+.reviews__homeland {
   color: var(--secondary-text);
 }
 
@@ -1047,7 +1047,7 @@ footer {
     padding: 0;
   }
 
-  .homes__variants--image {
+  .homes__image {
     margin-bottom: 8px;
   }
 
@@ -1055,7 +1055,7 @@ footer {
     display: none;
   }
 
-  .homes__image--description {
+  .homes__description {
     margin-bottom: 4px;
   }
 
@@ -1102,15 +1102,15 @@ footer {
     justify-content: space-evenly;
   }
 
-  .destination__variants--image {
+  .destination__image {
     margin-bottom: 8px;
   }
 
-  .destination__variants--description {
+  .destination__description {
     margin: 0;
   }
 
-  .destination__variants--button:before {
+  .destination__button:before {
     width: 155px;
     height: 155px;
   }
@@ -1137,7 +1137,7 @@ footer {
     padding: 0 16px;
   }
 
-  .sign-up__user--sign {
+  .sign-up__sign {
     display: flex;
     padding: 0;
   }
@@ -1149,7 +1149,7 @@ footer {
     display: inline-block;
   }
 
-  .sign-up__user--description {
+  .sign-up__description {
     margin: 0;
     font-size: 12px;
     font-weight: var(--font-regular);
@@ -1197,21 +1197,21 @@ footer {
     padding: 12px 0 0 0;
   }
 
-  .reviews__description-top {
+  .reviews__top {
     margin-bottom: 0;
   }
 
-  .reviews__description-place {
+  .reviews__place {
     margin-bottom: 8px;
   }
 
-  .reviews__description-grade{
+  .reviews__grade{
     width: 40px;
     height: 26px;
     margin-bottom: 4px;
   }
 
-  .reviews__description-logo {
+  .reviews__logo {
     width: 44px;
     height: 44px;
   }
