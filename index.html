@@ -19,7 +19,7 @@
             </a>
           </div>
           <nav class="header__links">
-            <ul class="header__list">
+            <ul class="header__list list">
               <li class="header__stays">
                 <a class="link _hide" href="#">Stays</a>
               </li>
@@ -55,14 +55,7 @@
             Discover stays <br />
             to live, work or just relax
           </h1>
-          <div class="header__description">
-            <p>Your destination or hotel name</p>
-            <!--            <div class="header__page&#45;&#45;calendar">-->
-            <!--              <div>Check-in</div>-->
-            <!--              <div>&nbsp—&nbsp</div>-->
-            <!--              <div>Check-out</div>-->
-            <!--            </div>-->
-          </div>
+          <p class="header__description">Your destination or hotel name</p>
           <form class="header__form">
             <input
               class="form__destination form__text form__desktop"
@@ -132,7 +125,9 @@
                 value="1 Room"
               />
             </div>
-            <button class="form__button-desktop form__desktop button">Search</button>
+            <button class="form__button-desktop form__desktop button">
+              Search
+            </button>
             <div class="form__destination-search form__mobile">
               <svg class="form__search-icon">
                 <use href="./img/logos/logo-sprite.svg#search" />
@@ -204,7 +199,9 @@
               type="text"
               value="1"
             />
-            <button class="form__button-mobile form__mobile button">Search</button>
+            <button class="form__button-mobile form__mobile button">
+              Search
+            </button>
           </form>
           <div class="header__apps">
             <div>
@@ -415,7 +412,9 @@
         <div class="destination__tabs description">
           <button class="destination__tab button">Regions</button>
           <button class="destination__tab button">Cities</button>
-          <button class="destination__tab _places button">Places of interest</button>
+          <button class="destination__tab _places button">
+            Places of interest
+          </button>
           <button class="destination__tab _place button">Places</button>
         </div>
         <div class="destination__variants description">
@@ -622,39 +621,55 @@
     </main>
     <footer>
       <div class="container">
-        <div class="footer__logo">
-          <svg>
-            <use href="./img/logos/logo-sprite.svg#logo" />
-          </svg>
-        </div>
-        <div class="footer__links">
-          <div class="footer__links--about">
-            <p class="footer__links--title col-sm-6 _right">About</p>
-            <p class="footer__links--list">How Triphouse works</p>
-            <p class="footer__links--list">Careers</p>
-            <p class="footer__links--list">Privacy</p>
-            <p class="footer__links--list">Terms</p>
-          </div>
-          <div class="footer__links--property">
-            <p class="footer__links--title">Property types</p>
-            <p class="footer__links--list">Guest houses</p>
-            <p class="footer__links--list">Hotels</p>
-            <p class="footer__links--list">Apartments</p>
-            <p class="footer__links--list">Villas</p>
-            <p class="footer__links--list">Holiday homes</p>
-            <p class="footer__links--list">Hostels</p>
-          </div>
-          <div class="footer__links--support">
-            <p class="footer__links--title col-sm-6 _left">Support</p>
-            <p class="footer__links--list">Contact Customer Service</p>
-            <p class="footer__links--list">FAQ</p>
-          </div>
-        </div>
-        <div
-          class="footer__copyright footer__links footer__links--list _mobile"
-        >
+        <section>
+          <a href="#">
+            <svg class="footer__logo">
+              <use href="./img/logos/logo-sprite.svg#logo" />
+            </svg>
+          </a>
+        </section>
+        <section class="footer__links-list">
+          <ul class="footer__links list">
+            <li class="footer__title col-sm-6 _right">
+              <a href="#" class="link">About</a>
+            </li>
+            <li class="footer__list">
+              <a href="#" class="link">How Triphouse works</a>
+            </li>
+            <li class="footer__list"><a href="#" class="link">Careers</a></li>
+            <li class="footer__list"><a href="#" class="link">Privacy</a></li>
+            <li class="footer__list"><a href="#" class="link">Terms</a></li>
+          </ul>
+          <ul class="footer__links list">
+            <li class="footer__title">
+              <a href="#" class="link">Property types</a>
+            </li>
+            <li class="footer__list">
+              <a href="#" class="link">Guest houses</a>
+            </li>
+            <li class="footer__list"><a href="#" class="link">Hotels</a></li>
+            <li class="footer__list">
+              <a href="#" class="link">Apartments</a>
+            </li>
+            <li class="footer__list"><a href="#" class="link">Villas</a></li>
+            <li class="footer__list">
+              <a href="#" class="link">Holiday homes</a>
+            </li>
+            <li class="footer__list"><a href="#" class="link">Hostels</a></li>
+          </ul>
+          <ul class="footer__links list">
+            <li class="footer__title col-sm-6 _left">
+              <a href="#" class="link">Support</a>
+            </li>
+            <li class="footer__list">
+              <a href="#" class="link">Contact Customer Service</a>
+            </li>
+            <li class="footer__list"><a href="#" class="link">FAQ</a></li>
+          </ul>
+        </section>
+        <p class="footer__copyright footer__links-list footer__list _mobile">
           &copy; 2022 Triphouse, Inc. All rights reserved
-        </div>
+        </p>
       </div>
     </footer>
   </body>
