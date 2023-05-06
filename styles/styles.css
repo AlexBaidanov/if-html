@@ -826,7 +826,7 @@ footer {
     padding: 40px 16px;
   }
 
-  header.container {
+  .header > .container {
     padding-top: 12px;
   }
 
@@ -1133,6 +1133,7 @@ footer {
   }
 
   .offers__image {
+    width: 70px;
     margin: 0;
     padding-bottom: 16px;
   }
@@ -1178,6 +1179,7 @@ footer {
     margin-bottom: 24px;
     background-color: var(--white);
     font-size: 19px;
+    justify-content: space-between;
   }
 
   .destination__tab {
@@ -1224,7 +1226,7 @@ footer {
   }
 
   .sign-up {
-    height: 106px;
+    height: 105px;
     margin: 0;
     background-color: var(--white);
     flex-direction: row-reverse;
@@ -1264,7 +1266,7 @@ footer {
   }
 
   .sign-up__close {
-    height: 106px;
+    height: 105px;
     padding: 0;
     background-color: var(--white);
     align-items: center;
@@ -1284,15 +1286,12 @@ footer {
     display: none;
   }
 
-  .reviews__variants {
-    min-height: 625px;
-  }
-
   .reviews__item {
     min-height: 625px;
   }
 
   .reviews__description {
+    min-height: 0;
     padding: 12px 0 0 0;
   }
 
@@ -1329,10 +1328,6 @@ footer {
     align-items: center;
   }
 
-  footer {
-    padding: 0;
-  }
-
   .footer__logo {
     width: 98px;
     height: 19px;
@@ -1344,6 +1339,7 @@ footer {
   .footer__links-list {
     padding: 0;
     text-align: center;
+    gap: 16px;
   }
 
   .footer__title {
