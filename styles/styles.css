@@ -741,6 +741,12 @@
 
 .reviews__homeland {
   color: var(--secondary-text);
+  display: flex;
+}
+
+.reviews__flag{
+  width: 10%;
+  height: 20px;
 }
 
 .reviews__arrow--ellipse {
