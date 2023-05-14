@@ -379,7 +379,7 @@
   flex-direction: column;
 }
 
-.offers__title:after {
+.title:hover:after {
   display: inline-block;
   content: "";
   width: 100px;
@@ -389,6 +389,19 @@
   top: 100%;
   left: 50%;
   transform: translate(-50%, 500%);
+  animation: title__underline 250ms ease-in-out;
+}
+
+@keyframes title__underline {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .offers__variants {
