@@ -55,153 +55,116 @@
             Discover stays <br />
             to live, work or just relax
           </h1>
-          <p class="header__description form__text">Your destination or hotel name</p>
+          <p class="header__description form__text">
+            Your destination or hotel name
+          </p>
           <form class="header__form">
-            <input
-              class="form__destination form__text form__desktop"
-              type="text"
-              name="hotel"
-              id="destination"
-              value="New York"
-            />
-            <div class="form__date-desktop">
-              <label
-                class="form__label form__text check-in"
-                for="check-in--desktop"
-                >Check in</label
-              >
-              <input
-                class="form__date form__check-in form__text form__desktop text__center"
-                type="text"
-                name="calendar"
-                id="check-in--desktop"
-                value="Tue 15 Sept"
-              />
-              <label class="form__label dash" for="date">—</label>
-              <input
-                class="form__date form__text form__desktop text__center"
-                type="text"
-                name="calendar"
-                id="date"
-                value="—"
-              />
-              <label
-                class="form__label form__text check-out"
-                for="check-out--desktop"
-                >Check out</label
-              >
-              <input
-                class="form__date form__check-out form__text form__desktop text__center"
-                type="text"
-                name="calendar"
-                id="check-out--desktop"
-                value="Sat 19 Sept"
-              />
-            </div>
-            <div class="form__booking-desktop">
-              <input
-                class="form__booking form__adults form__text form__desktop text__center"
-                type="text"
-                value="2 Adults"
-              />
-              <input
-                class="form__booking form__text form__desktop text__center"
-                type="text"
-                value="—"
-              />
-              <input
-                class="form__booking form__children form__text form__desktop text__center"
-                type="text"
-                value="0 Children"
-              />
-              <input
-                class="form__booking form__text form__desktop text__center"
-                type="text"
-                value="—"
-              />
-              <input
-                class="form__booking form__room form__text form__desktop text__center"
-                type="text"
-                value="1 Room"
-              />
-            </div>
-            <button class="form__button-desktop form__desktop button">
-              Search
-            </button>
-            <div class="form__destination-search form__mobile">
+            <div class="form__destination-search">
               <svg class="form__search-icon">
                 <use href="./img/logos/logo-sprite.svg#search" />
               </svg>
             </div>
             <input
-              class="form__destination form__text form__mobile"
+              class="form__destination form__text"
               type="text"
               name="hotel"
-              value="Your destination or hotel name"
+              value="New York"
             />
-            <input
-              class="form__date form__check-in form__text form__mobile _mobile text__center"
-              type="text"
-              name="calendar"
-              id="check-in"
-            />
-            <input
-              class="form__date form__first-date form__text form__mobile text__center"
-              type="text"
-              name="calendar"
-              value="Tue 15 Sept 2022"
-            />
-            <input
-              class="form__date form__check-out form__text form__mobile _mobile text__center"
-              type="text"
-              name="calendar"
-              id="check-out"
-            />
-            <input
-              class="form__date form__last-date form__text form__mobile text__center"
-              type="text"
-              name="calendar"
-              value="Sat 19 Sept 2022"
-            />
-            <input
-              class="form__booking form__adults form__text form__mobile _mobile text__center"
-              type="text"
-              value="Adults"
-            />
-            <input
-              class="form__booking form__adults-num form__text form__mobile text__center"
-              type="text"
-              value="2"
-            />
-            <div class="form__border-left form__mobile">
-              <div class="form__border-gray"></div>
+            <div class="form__date-block">
+              <input
+                class="form__date form__check-in form__text _mobile text__center"
+                type="text"
+                name="calendar"
+              />
+              <label
+                class="form__label form__text check-in"
+                for="check-in"
+                >Check in</label
+              >
+              <input
+                class="form__date form__first-date form__text text__center"
+                type="text"
+                name="calendar"
+                id="check-in"
+                value="Tue 15 Sept"
+              />
+              <label class="form__label dash" for="date">—</label>
+              <input
+                class="form__date form__dash form__text form__desktop text__center"
+                type="text"
+                name="calendar"
+                id="date"
+                value="—"
+              />
+              <input
+                class="form__date form__check-out form__text _mobile text__center"
+                type="text"
+                name="calendar"
+              />
+              <label
+                class="form__label form__text check-out"
+                for="check-out"
+                >Check out</label
+              >
+              <input
+                class="form__date form__last-date form__text text__center"
+                type="text"
+                name="calendar"
+                id="check-out"
+                value="Sat 19 Sept"
+              />
             </div>
-            <input
-              class="form__booking form__children form__text form__mobile _mobile text__center"
-              type="text"
-              value="Children"
-            />
-            <input
-              class="form__booking form__children-num form__text form__mobile text__center"
-              type="text"
-              value="0"
-            />
-            <div class="form__border-right form__mobile">
-              <div class="form__border-gray"></div>
+            <div class="form__booking-block">
+              <input
+                class="form__booking form__adults form__text _mobile text__center"
+                type="text"
+                value="Adults"
+              />
+              <input
+                class="form__booking form__adults-num form__text text__center"
+                type="text"
+                value="2"
+              />
+              <input
+                class="form__date form__dash-left form__text form__desktop text__center"
+                type="text"
+                name="calendar"
+                value="—"
+              />
+              <div class="form__border-left">
+                <div class="form__border-gray"></div>
+              </div>
+              <input
+                class="form__booking form__children form__text _mobile text__center"
+                type="text"
+                value="Children"
+              />
+              <input
+                class="form__booking form__children-num form__text text__center"
+                type="text"
+                value="0"
+              />
+              <input
+                class="form__date form__dash-right form__text form__desktop text__center"
+                type="text"
+                name="calendar"
+                value="—"
+              />
+              <div class="form__border-right">
+                <div class="form__border-gray"></div>
+              </div>
+              <input
+                class="form__booking form__room form__text _mobile text__center"
+                type="text"
+                value="Room"
+              />
+              <input
+                class="form__booking form__room-num form__text text__center"
+                type="text"
+                value="1"
+              />
             </div>
-            <input
-              class="form__booking form__room form__text form__mobile _mobile text__center"
-              type="text"
-              value="Room"
-            />
-            <input
-              class="form__booking form__room-num form__text form__mobile text__center"
-              type="text"
-              value="1"
-            />
-            <button class="form__button-mobile form__mobile button">
-              Search
-            </button>
+            <button class="form__button button">Search</button>
           </form>
           <div class="header__apps">
             <div>
@@ -367,7 +330,9 @@
                 alt="Hotel"
               />
               <figcaption class="homes__description">Hotel Leopold</figcaption>
-              <figcaption class="homes__place">Saint Petersburg, Russia</figcaption>
+              <figcaption class="homes__place">
+                Saint Petersburg, Russia
+              </figcaption>
             </figure>
             <figure class="homes__item _mobile">
               <img
@@ -375,7 +340,9 @@
                 src="./img/homes/apartment.png"
                 alt="Apartment"
               />
-              <figcaption class="homes__description">Apartment Sunshine</figcaption>
+              <figcaption class="homes__description">
+                Apartment Sunshine
+              </figcaption>
               <figcaption class="homes__place">
                 Santa Cruz de Tenerife, <br />
                 Spain
@@ -388,7 +355,9 @@
                 alt="Villa"
               />
               <figcaption class="homes__description">Villa Kunerad</figcaption>
-              <figcaption class="homes__place">Vysokie Tatry, Slowakia</figcaption>
+              <figcaption class="homes__place">
+                Vysokie Tatry, Slowakia
+              </figcaption>
             </figure>
             <figure class="homes__item _hide">
               <img
@@ -396,7 +365,9 @@
                 src="./img/homes/hostel.png"
                 alt="Hostel"
               />
-              <figcaption class="homes__description">Hostel Friendship</figcaption>
+              <figcaption class="homes__description">
+                Hostel Friendship
+              </figcaption>
               <figcaption class="homes__place">Berlin, Germany</figcaption>
             </figure>
           </div>
